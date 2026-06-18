@@ -8,14 +8,14 @@ export default async function handler(req, res) {
   // Páginas fijas
   const paginasEstaticas = ["", "blog", "contacto"];
   
-  // CORREGIDO: Ahora lleva tu subdominio real de tu proyecto
+  // Tu subdominio de Render
   const dominioReal = "https://nextjs-seo-project.onrender.com";
 
-  // CORREGIDO: Formato urlset exacto que exige Google para no dar error de nombres
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>';
-  xml += '<urlset xmlns="http://sitemaps.org">';
+  // CORREGIDO: Formato urlset oficial y completo con comillas limpias
+  let xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+  xml += "<urlset xmlns=\"http://sitemaps.org\">";
 
-  // Páginas estáticas con tu dominio real
+  // Páginas estáticas
   paginasEstaticas.forEach((page) => {
     const ruta = page === "" ? "" : "/" + page;
     xml += '<url>';
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     xml += '</url>';
   });
   
-  // Rutas dinámicas con el slug real y dominio de Render
+  // Rutas dinámicas
   postsDinamicos.forEach((post) => {
     xml += '<url>';
     xml += '<loc>' + dominioReal + '/blog/' + post.slug + '</loc>';
