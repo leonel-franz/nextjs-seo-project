@@ -49,75 +49,15 @@ export default function Home() {
 
 // Estilos globales compartidos
 const styles = {
-  container: {
-    backgroundColor: "#0B0F19",
-    color: "#F3F4F6",
-    minHeight: "100vh",
-    fontFamily: "system-ui, sans-serif",
-    padding: "0 20px"
-  },
-  nav: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "20px",
-    padding: "20px 0",
-    borderBottom: "1px solid #1E293B"
-  },
-  navLink: {
-    color: "#9CA3AF",
-    textDecoration: "none",
-    fontWeight: "500",
-    fontSize: "16px",
-    transition: "0.2s"
-  },
-  activeLink: {
-    color: "#3B82F6",
-    borderBottom: "2px solid #3B82F6",
-    paddingBottom: "4px"
-  },
-  main: {
-    maxWidth: "800px",
-    margin: "40px auto",
-    textAlign: "center"
-  },
-  title: {
-    fontSize: "36px",
-    fontWeight: "800",
-    marginBottom: "16px",
-    background: "linear-gradient(to right, #3B82F6, #8B5CF6)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent"
-  },
-  subtitle: {
-    fontSize: "18px",
-    color: "#9CA3AF",
-    marginBottom: "40px",
-    lineHeight: "1.6"
-  },
-  imageContainer: {
-    borderRadius: "12px",
-    overflow: "hidden",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
-    marginBottom: "40px",
-    display: "inline-block"
-  },
-  image: {
-    display: "block",
-    maxWidth: "100%",
-    height: "auto"
-  },
-  card: {
-    background: "#1E293B",
-    padding: "24px",
-    borderRadius: "12px",
-    textAlign: "left",
-    border: "1px solid #334155",
-    marginTop: "20px"
-  },
-  cardTitle: {
-    fontSize: "20px",
-    fontWeight: "600",
-    color: "#3B82F6",
-    marginBottom: "10px"
-  }
+  container: { backgroundColor: "#0B0F19", color: "#F3F4F6", minHeight: "100vh", fontFamily: "system-ui, sans-serif", padding: "0 20px" },
+  nav: { display: "flex", justifyContent: "center", gap: "20px", padding: "20px 0", borderBottom: "1px solid #1E293B" },
+  navLink: { color: "#9CA3AF", textDecoration: "none", fontWeight: "500", fontSize: "16px", transition: "0.2s" },
+  activeLink: { color: "#3B82F6", borderBottom: "2px solid #3B82F6", paddingBottom: "4px" },
+  main: { maxWidth: "800px", margin: "40px auto", textAlign: "center" as const }, // Corregido
+  title: { fontSize: "36px", fontWeight: "800", marginBottom: "16px", background: "linear-gradient(to right, #3B82F6, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
+  subtitle: { fontSize: "18px", color: "#9CA3AF", marginBottom: "40px", lineHeight: "1.6" },
+  imageContainer: { borderRadius: "12px", overflow: "hidden" as const, boxShadow: "0 10px 30px rgba(0,0,0,0.5)", marginBottom: "40px", display: "inline-block" },
+  image: { display: "block", maxWidth: "100%", height: "auto" },
+  card: { background: "#1E293B", padding: "24px", borderRadius: "12px", textAlign: "left" as const, border: "1px solid #334155", marginTop: "20px" },
+  cardTitle: { fontSize: "20px", fontWeight: "600", color: "#3B82F6", marginBottom: "10px" }
 };

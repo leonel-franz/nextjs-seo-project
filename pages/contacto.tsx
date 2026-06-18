@@ -30,7 +30,7 @@ export default function Contacto() {
           </div>
           <div style={{marginBottom: "20px"}}>
             <label style={styles.label}>Mensaje</label>
-            <textarea placeholder="Cuéntanos sobre tu sitio web..." rows="4" style={styles.textarea}></textarea>
+            <textarea placeholder="Cuéntanos sobre tu sitio web..." rows={4} style={styles.textarea}></textarea>
           </div>
           <button type="submit" style={styles.button}>Enviar Mensaje</button>
         </form>
@@ -44,12 +44,12 @@ const styles = {
   nav: { display: "flex", justifyContent: "center", gap: "20px", padding: "20px 0", borderBottom: "1px solid #1E293B" },
   navLink: { color: "#9CA3AF", textDecoration: "none", fontWeight: "500" },
   activeLink: { color: "#3B82F6", borderBottom: "2px solid #3B82F6", paddingBottom: "4px" },
-  main: { maxWidth: "500px", margin: "40px auto", textAlign: "center" },
+  main: { maxWidth: "500px", margin: "40px auto", textAlign: "center" as const }, // Corregido con 'as const'
   title: { fontSize: "32px", fontWeight: "800", marginBottom: "16px", background: "linear-gradient(to right, #3B82F6, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
   subtitle: { fontSize: "16px", color: "#9CA3AF", marginBottom: "30px" },
-  form: { background: "#1E293B", padding: "30px", borderRadius: "12px", border: "1px solid #334155", textAlign: "left" },
+  form: { background: "#1E293B", padding: "30px", borderRadius: "12px", border: "1px solid #334155", textAlign: "left" as const }, // Corregido con 'as const'
   label: { display: "block", marginBottom: "8px", fontSize: "14px", color: "#CBD5E1", fontWeight: "500" },
-  input: { width: "100%", padding: "12px", borderRadius: "6px", border: "1px solid #334155", backgroundColor: "#0F172A", color: "#FFF", fontSize: "15px", boxSizing: "border-box" },
-  textarea: { width: "100%", padding: "12px", borderRadius: "6px", border: "1px solid #334155", backgroundColor: "#0F172A", color: "#FFF", fontSize: "15px", boxSizing: "border-box", resize: "none" },
+  input: { width: "100%", padding: "12px", borderRadius: "6px", border: "1px solid #334155", backgroundColor: "#0F172A", color: "#FFF", fontSize: "15px", boxSizing: "border-box" as const },
+  textarea: { width: "100%", padding: "12px", borderRadius: "6px", border: "1px solid #334155", backgroundColor: "#0F172A", color: "#FFF", fontSize: "15px", boxSizing: "border-box" as const, resize: "none" as const },
   button: { width: "100%", padding: "12px", borderRadius: "6px", border: "none", backgroundColor: "#3B82F6", color: "#FFF", fontSize: "16px", fontWeight: "600", cursor: "pointer" }
 };
