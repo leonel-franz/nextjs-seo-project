@@ -7,6 +7,13 @@ export default function Blog() {
       <Head>
         <title>Blog de Tecnología y Desarrollo Web | Mi Sitio</title>
         <meta name="description" content="Artículos y tutoriales sobre programación, Next.js y optimización SEO." />
+        <meta name="keywords" content="Next.js, SEO, blog de tecnologia, optimizacion web" />
+        
+        {/* Metadatos Open Graph Agregados */}
+        <meta property="og:title" content="Blog de Tecnología - Desarrolla Mejor" />
+        <meta property="og:description" content="Lee nuestros últimos artículos sobre rendimiento web." />
+        <meta property="og:image" content="/images/seo-image.png" />
+        <meta property="og:type" content="article" />
       </Head>
 
       <nav style={styles.nav}>
