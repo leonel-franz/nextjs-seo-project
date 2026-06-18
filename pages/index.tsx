@@ -16,6 +16,9 @@ export default function Home() {
         <meta property="og:description" content="Descubre técnicas avanzadas para mejorar tu web con Next.js." />
         <meta property="og:image" content="/images/seo-image.png" />
         <meta property="og:type" content="website" />
+        
+        {/* Etiqueta de verificación de Google agregada con éxito */}
+        <meta name="google-site-verification" content="ogHJ4M7PFMYA4cByUny0KBCr3xQIlNUgvbo3TTzXoxU" />
       </Head>
 
       {/* Menú de Navegación */}
@@ -53,7 +56,7 @@ const styles = {
   nav: { display: "flex", justifyContent: "center", gap: "20px", padding: "20px 0", borderBottom: "1px solid #1E293B" },
   navLink: { color: "#9CA3AF", textDecoration: "none", fontWeight: "500", fontSize: "16px", transition: "0.2s" },
   activeLink: { color: "#3B82F6", borderBottom: "2px solid #3B82F6", paddingBottom: "4px" },
-  main: { maxWidth: "800px", margin: "40px auto", textAlign: "center" as const }, // Corregido
+  main: { maxWidth: "800px", margin: "40px auto", textAlign: "center" as const },
   title: { fontSize: "36px", fontWeight: "800", marginBottom: "16px", background: "linear-gradient(to right, #3B82F6, #8B5CF6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" },
   subtitle: { fontSize: "18px", color: "#9CA3AF", marginBottom: "40px", lineHeight: "1.6" },
   imageContainer: { borderRadius: "12px", overflow: "hidden" as const, boxShadow: "0 10px 30px rgba(0,0,0,0.5)", marginBottom: "40px", display: "inline-block" },
